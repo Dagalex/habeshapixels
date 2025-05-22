@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HabeshaPixels - Professional Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/portfolioCSS.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <div class="logo">
+        <a href="index.html">HabeshaPixels</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#heroSlideshow" class="active">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="heroSlideshow" class="hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>Capturing Timeless Moments</h1>
+            <p class="hero-subtitle">Professional photography for weddings, engagements & special events</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="hero-btn">View Portfolio</a>
+                <a href="#booking" class="hero-btn secondary">Book a Session</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+    <div class="container">
+        <h2>Our Portfolio</h2>
+        <p class="section-subtitle">Explore our featured photography collections</p>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-card" onclick="window.location.href='wedding-portfolio.html'">
+                <div class="portfolio-image-wrapper">
+                    <img src="images/wedding/wedding1.jpg" alt="Wedding Photography" class="portfolio-image"/>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Wedding Photography</h3>
+                    <p>Timeless memories of your special day</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-card" onclick="window.location.href='engagement-portfolio.html'">
+                <div class="portfolio-image-wrapper">
+                    <img src="images/engagement/engagement1.jpg" alt="Engagement Photography" class="portfolio-image"/>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Engagement</h3>
+                    <p>Celebrating your love story</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-card" onclick="window.location.href='event-portfolio.html'">
+                <div class="portfolio-image-wrapper">
+                    <img src="images/event/event5.jpg" alt="Event Photography" class="portfolio-image"/>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Events</h3>
+                    <p>Capturing life's celebrations</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-card" onclick="window.location.href='commercial-portfolio.html'">
+                <div class="portfolio-image-wrapper">
+                    <img src="images/commercial/commercial1.jpg" alt="Commercial Photography" class="portfolio-image"/>
+                </div>
+                <div class="portfolio-overlay">
+                    <h3>Commercial</h3>
+                    <p>Professional imagery for your brand</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="team-section">
+    <div class="container">
+        <h2>Meet Our Team</h2>
+        <p class="section-subtitle">The creative minds behind HabeshaPixels</p>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="images/team/Babel.jpg" alt="Zerubabel Alemayehu"/>
+                </div>
+                <div class="member-info">
+                    <h3>Zerubabel Alemayehu</h3>
+                    <p class="position">Lead Photographer</p>
+                    <p class="bio">With an artistic eye for detail, Zerubabel specializes in capturing the raw emotions and fleeting moments that tell your unique story.</p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="images/team/Dagi.jpg" alt="Dagmawi Alemayehu"/>
+                </div>
+                <div class="member-info">
+                    <h3>Dagmawi Alemayehu</h3>
+                    <p class="position">Videographer & Editor</p>
+                    <p class="bio">Dagmawi brings moments to life through cinematic storytelling and seamless editing that preserves the essence of every occasion.</p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="images/team/Haile.jpg" alt="Haileab Tadesse"/>
+                </div>
+                <div class="member-info">
+                    <h3>Haileab Tadesse</h3>
+                    <p class="position">Visual Artist</p>
+                    <p class="bio">Haileab combines technical mastery with creative vision to produce stunning visual narratives that stand the test of time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Booking Section -->
+<section id="booking" class="booking-section">
+    <div class="container">
+        <div class="booking-card">
+            <div class="booking-content">
+                <h2>Ready to Create Memories?</h2>
+                <p>Book your photography session today and let us capture your special moments with artistry and passion.</p>
+                
+                <form class="booking-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Service</option>
+                            <option value="wedding">Wedding Photography</option>
+                            <option value="engagement">Engagement Session</option>
+                            <option value="event">Event Coverage</option>
+                            <option value="commercial">Commercial Photography</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell us about your vision..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Request Booking</button>
+                </form>
+            </div>
+            <div class="booking-image">
+                <img src="images/booking-image.jpg" alt="Photography Session"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">HabeshaPixels</a>
+                <p>Capturing life's most precious moments with artistry and passion.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#heroSlideshow">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="wedding-portfolio.html">Wedding Photography</a></li>
+                    <li><a href="engagement-portfolio.html">Engagement Sessions</a></li>
+                    <li><a href="event-portfolio.html">Event Coverage</a></li>
+                    <li><a href="commercial-portfolio.html">Commercial Photography</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 HabeshaPixels. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/portfolioGallery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
