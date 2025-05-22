@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Session | HabeshaPixels</title>
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portfolioCSS.css" />
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="logo">
+        <a href="index.html">HabeshaPixels</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Portfolio <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="wedding-portfolio.html">Wedding Portfolio</a>
+                    <a href="engagement-portfolio.html">Engagement Portfolio</a>
+                    <a href="event-portfolio.html">Event Portfolio</a>
+                    <a href="commercial-portfolio.html">Commercial Portfolio</a>
+                </div>
+            </li>
+            <li><a href="booking.html" class="active">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Booking Hero -->
+<section class="booking-hero">
+    <h1>Book Your Photography Session</h1>
+    <p>Let's create beautiful memories together</p>
+</section>
+
+<!-- Booking Container -->
+<div class="booking-container">
+    <!-- Progress Steps -->
+    <div class="booking-steps">
+        <div class="step active">1. Service</div>
+        <div class="step">2. Date & Time</div>
+        <div class="step">3. Your Details</div>
+        <div class="step">4. Confirmation</div>
+    </div>
+
+    <!-- Booking Form -->
+    <form class="booking-form" id="bookingForm">
+        <!-- Service Selection -->
+        <div class="form-group">
+            <h2 style="margin-bottom: 20px; font-family: 'Playfair Display', serif;">Select Your Service</h2>
+            <div class="service-options">
+                <div class="service-option selected" data-service="wedding">
+                    <h3>Wedding Photography</h3>
+                    <p>Full day coverage</p>
+                    <p>From $1,200</p>
+                </div>
+                
+                <div class="service-option" data-service="engagement">
+                    <h3>Engagement Session</h3>
+                    <p>1-2 hour session</p>
+                    <p>From $300</p>
+                </div>
+                
+                <div class="service-option" data-service="portrait">
+                    <h3>Portrait Session</h3>
+                    <p>Studio or outdoor</p>
+                    <p>From $250</p>
+                </div>
+                
+                <div class="service-option" data-service="event">
+                    <h3>Event Coverage</h3>
+                    <p>Hourly rates available</p>
+                    <p>From $150/hr</p>
+                </div>
+                
+                <div class="service-option" data-service="commercial">
+                    <h3>Commercial</h3>
+                    <p>Product & branding</p>
+                    <p>Custom quotes</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Date & Time -->
+        <div class="form-group">
+            <label for="bookingDate">Preferred Date</label>
+            <input type="date" id="bookingDate" class="form-control" min="2023-01-01" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="bookingTime">Preferred Time</label>
+            <select id="bookingTime" class="form-control" required>
+                <option value="">Select time</option>
+                <option value="morning">Morning (8am-12pm)</option>
+                <option value="afternoon">Afternoon (12pm-4pm)</option>
+                <option value="evening">Evening (4pm-8pm)</option>
+            </select>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Special Requests</label>
+            <textarea id="message" class="form-control" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="booking-btn">
+            <i class="fas fa-calendar-check"></i> Book Now
+        </button>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">HabeshaPixels</a>
+                <p>Capturing life's most precious moments with artistry and passion.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="service.html">Wedding Photography</a></li>
+                    <li><a href="service.html">Engagement Sessions</a></li>
+                    <li><a href="service.html">Portrait Photography</a></li>
+                    <li><a href="service.html">Event Coverage</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 HabeshaPixels. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    // Service Selection
+    const serviceOptions = document.querySelectorAll('.service-option');
+    serviceOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            serviceOptions.forEach(opt => opt.classList.remove('selected'));
+            option.classList.add('selected');
+        });
+    });
+
+    // Form Submission
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your booking request! We will contact you shortly to confirm your session.');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
